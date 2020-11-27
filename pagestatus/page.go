@@ -22,6 +22,7 @@ func (p *Page) CheckPage() {
 	if e != nil {
 		log.Println("Can't get the page")
 		p.StatusCode = -1
+		return
 	}
 	p.StatusCode = r.StatusCode
 }
